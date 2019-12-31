@@ -27,13 +27,13 @@
         color: #D8D8D8;
         }
 
-        div.container-fluid
+        /* div.container-fluid
         {
             font-family: Raleway;
             margin: 0 auto;
             padding: 20px 3px;
             text-align: center;
-        }
+        } */
 
         div.container-fluid a
         {
@@ -89,7 +89,9 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid purple topBotomBordersIn" style="color: white;">
+    <div class="container-fluid purple topBotomBordersIn" style="color: white; font-family: Raleway;  margin: 0 auto;
+            padding: 20px 3px;
+            text-align: center;">
     <a >HOME</a>
     <a>ARTICLES</a>
     <a>PORTFOLIO</a>

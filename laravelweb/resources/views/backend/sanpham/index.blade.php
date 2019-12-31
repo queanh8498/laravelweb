@@ -22,7 +22,7 @@ Danh sách sản phẩm
 - Đường dẫn URL là đường dẫn được tạo ra bằng route có tên `danhsachsanpham.create`
 - Sẽ có dạng http://tenmiencuaban.com/admin/danhsachsanpham/create
 -->
-<a href="{{ route('danhsachsanpham.create') }}" class="btn btn-primary">Thêm mới sản phẩm</a><br><br>
+<a href="{{ route('danhsachsanpham.create') }}" class="btn btn-primary" style="font-family: Tohamo; font-size: 18px;">Thêm mới sản phẩm</a><br><br>
 <!-- Tạo table hiển thị danh sách các sản phẩm -->
 <table class="table table-bordered">
     <thead>
@@ -77,10 +77,3 @@ Danh sách sản phẩm
 </table>
 @endsection
 
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
-
-    a{
-        font-family: 'Roboto Slab', serif;
-    }
-</style>

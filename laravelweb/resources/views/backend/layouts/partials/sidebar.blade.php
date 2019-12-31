@@ -24,7 +24,7 @@
 
 
         .main-menu:hover,nav.main-menu.expanded {
-        width:250px;
+        width:220px;
         overflow:visible;
         }
 
@@ -51,7 +51,7 @@
         .main-menu li {
         position:relative;
         display:block;
-        width:250px;
+        width:220px;
         }
 
         .main-menu li>a {
@@ -221,6 +221,16 @@
                             Logout
                         </span>
                     </a>
+                    <!-- <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form> -->
+
                 </li>  
             </ul>
         </nav>
