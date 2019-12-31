@@ -76,3 +76,11 @@ Danh sách sản phẩm
     </tbody>
 </table>
 @endsection
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+
+    a{
+        font-family: 'Roboto Slab', serif;
+    }
+</style>
