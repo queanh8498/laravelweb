@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// route Danh mục Sản phẩm
+Route::resource('/admin/danhsachsanpham', 'SanPhamController');
+
