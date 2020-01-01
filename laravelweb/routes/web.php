@@ -16,5 +16,12 @@ Route::get('/', function () {
 });
 
 // route Danh mục Sản phẩm
+
+Route::get('/admin/danhsachsanpham/excel', 'SanPhamController@excel')->name('danhsachsanpham.excel');
+Route::get('/admin/danhsachsanpham/print', 'SanPhamController@print')->name('danhsachsanpham.print');
+
 Route::resource('/admin/danhsachsanpham', 'SanPhamController');
 
+// route Danh mục Loại
+
+Route::resource('/admin/danhsachloai', 'LoaiController');

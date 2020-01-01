@@ -10,6 +10,11 @@ Danh sách sản phẩm
 - Div này chỉ hiển thị khi trong Session có các key `alert-*` từ Controller trả về. 
 - Sử dụng các class của Bootstrap "danger", "warning", "success", "info" để hiển thị màu cho đúng với trạng thái kết quả.
 -->
+
+<a href="{{ route('danhsachsanpham.print') }}" class="btn btn-success" style="font-family: Tohamo; font-size: 18px;">In ấn</a>
+<a href="{{ route('danhsachsanpham.excel') }}" class="btn btn-success" style="font-family: Tohamo; font-size: 18px;">Xuất Excel</a>
+
+<br><br>
 <div class="flash-message">
     @foreach (['danger', 'warning', 'success', 'info'] as $msg)
       @if(Session::has('alert-' . $msg))

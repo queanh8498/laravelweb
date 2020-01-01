@@ -161,10 +161,10 @@
                     
                 </li>
                 <li class="has-subnav">
-                    <a href="#">
+                    <a href="{{ route('danhsachloai.index') }}">
                        <i class="fa fa-list fa-2x"></i>
                         <span class="nav-text">
-                            Forms
+                        Danh sách loại
                         </span>
                     </a>
                     
