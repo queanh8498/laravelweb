@@ -170,10 +170,10 @@
                     
                 </li>
                 <li class="has-subnav">
-                    <a href="#">
+                    <a href="{{ route('danhsachchude.index') }}">
                        <i class="fa fa-folder-open fa-2x"></i>
                         <span class="nav-text">
-                            Pages
+                            Chủ đề
                         </span>
                     </a>
                    
