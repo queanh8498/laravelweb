@@ -215,11 +215,17 @@
 
             <ul class="logout">
                 <li>
-                   <a href="#">
+                   <a href="class="nav-link href="{{ route('logout') }}"
+                     onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
                          <i class="fa fa-power-off fa-2x"></i>
                         <span class="nav-text">
                             Logout
                         </span>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+
                     </a>
                     
                 </li>  

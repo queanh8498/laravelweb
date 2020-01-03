@@ -29,3 +29,9 @@ Route::resource('/admin/danhsachloai', 'LoaiController');
 // route Danh mục Chủ đề
 
 Route::resource('/admin/danhsachchude', 'ChuDeController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/admin/activate/{nv_ma}', 'Backend\BackendController@activate')->name('activate');
