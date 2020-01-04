@@ -1,11 +1,15 @@
 <?php
 
+
 namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Loai; 
+use App\Mau; 
+
 use DB;
+use App\SanPham;
 use Mail;
 use App\Mail\ContactMailer;
 
@@ -65,7 +69,7 @@ class FrontendController extends Controller
     public function sendMailContactForm(Request $request)
     {
         $input = $request->all();
-        Mail::to('tranlenhatminh97@gmail.com')->send(new ContactMailer($input));
+        Mail::to('queanhst98@gmail.com')->send(new ContactMailer($input));
         return $input;
     }
 
