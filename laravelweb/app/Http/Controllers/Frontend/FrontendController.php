@@ -1,11 +1,15 @@
 <?php
 
+
 namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Loai; 
+use App\Mau; 
+
 use DB;
+use App\SanPham;
 use Mail;
 use App\Mail\ContactMailer;
 
