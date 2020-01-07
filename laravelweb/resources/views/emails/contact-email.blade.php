@@ -8,10 +8,7 @@
         <tr>
             <td colspan="2" style="border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black; padding: 5px;"> Đây là lời nhắn được gởi từ khách hàng có thông tin như sau: </td>
         </tr>
-        <tr>
-            <th style="border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black;text-align: right; padding: 5px;">Số điện thoại khách hàng:</th>
-            <td style="border-bottom: 1px solid black;border-right: 1px solid black; padding: 5px;">{{ $data['sdt'] }}</td>
-        </tr>
+       
         <tr>
             <th style="border-bottom: 1px solid black;border-right: 1px solid black;border-left: 1px solid black;text-align: right; padding: 5px;">Email khách hàng:</th>
             <td style="border-bottom: 1px solid black;border-right: 1px solid black; padding: 5px;">{{ $data['email'] }}</td>

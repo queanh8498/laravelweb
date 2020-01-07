@@ -65,7 +65,7 @@ class FrontendController extends Controller
     public function sendMailContactForm(Request $request)
     {
         $input = $request->all();
-        Mail::to('tranlenhatminh97@gmail.com')->send(new ContactMailer($input));
+        Mail::to('queanhst98@gmail.com')->send(new ContactMailer($input));
         return $input;
     }
 

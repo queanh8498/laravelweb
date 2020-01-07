@@ -31,7 +31,7 @@ class ContactMailer extends Mailable
     public function build()
     {
         $email = $this->data['email'];
-        return $this->from(env('MAIL_FROM_ADDRESS', 'tranlenhatminh97@gmail.com'), env('MAIL_FROM_NAME', 'Laravelweb'))
+        return $this->from(env('MAIL_FROM_ADDRESS', 'queanhst98@gmail.com'), env('MAIL_FROM_NAME', 'laravelweb'))
             ->replyTo($email)
             ->subject("Có khách $email vừa liên hệ")
             ->view('emails.contact-email')

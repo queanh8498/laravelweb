@@ -113,7 +113,7 @@ Liên hệ Shop Hoa quả - Ngon Ngon
                         </span>
 
                         <p class="stext-115 cl1 size-213 p-t-18">
-                            tranlenhatminh97@gmail.com
+                            queanhst98@gmail.com
                         </p>
                     </div>
                 </div>

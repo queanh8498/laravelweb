@@ -40,7 +40,7 @@
                 <div class="menu-desktop">
                     <ul class="main-menu">
                         <li class="{{ Request::is('') ? 'active-menu' : '' }}">
-                            <a href="">Home</a>
+                            <a href="{{ route('frontend.home') }}">Home</a>
                         </li>
 
                         <li>
