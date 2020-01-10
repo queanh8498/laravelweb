@@ -8,3 +8,8 @@ Minh Minh
 
 sửa file .env nếu chạy gặp lỗi thì chạy cmd 
 php artisan config:cache
+
+kho: id, tenkho,diachikho, nguoiphutrach, sdtngdo.
+phieunhapchitiet: id, phieunhapid, idkho, sp_Ten, soluongsp, gianhap, donvitinh
+phieunhap: id, maphieu, ngaylap
+phieuxuatchitiet: id, phieuxuatid, idkho, sp_Ten, soluongsp, gia, donvitinh

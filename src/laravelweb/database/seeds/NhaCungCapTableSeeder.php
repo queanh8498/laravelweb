@@ -10,9 +10,9 @@ class NhaCungCapTableSeeder extends Seeder
 {
     public function getCompanyName($fullname, $uFN) {
         $loaiDoanhNghiep = ["Cty TNHH TMDV ", "Cty TNHH ", "DNTN ", "Cty TNHH MTV "];
-        $hoaDoanhNghiep  = ["Hoa Tươi ", "Hoa Cao Cấp ", "Hoa ", ""];
+        $traicayDoanhNghiep  = ["Trái cây Tươi ", "Trái cây Cao Cấp ", ""];
         $name1 = $loaiDoanhNghiep[VnBase::RandomNumber(0, count($loaiDoanhNghiep) - 1)];
-        $name2 = $hoaDoanhNghiep [VnBase::RandomNumber(0, count($hoaDoanhNghiep) - 1)];
+        $name2 = $traicayDoanhNghiep [VnBase::RandomNumber(0, count($traicayDoanhNghiep) - 1)];
         $name  = $name1.$name2;
         $part  = explode(" ", $fullname);
         $nPart = count($part);

@@ -14,12 +14,13 @@ class ChitietNhapTableSeeder extends Seeder
         //
         $list = [];
         
-        for ($i=1; $i <= 2; $i++) {
+        for ($i=1; $i <= 3; $i++) {
             $today = new DateTime();
             array_push($list, [
                 'pn_ma'                   => $i,
                 'sp_ma'                   => $i,
-                'm_ma'                    => $i,
+                'k_ma'                   => $i,
+                //'m_ma'                    => $i,
                 'ctn_soLuong'             => $i,
                 'ctn_donGia'              => $i
             ]);

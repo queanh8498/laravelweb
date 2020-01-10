@@ -90,7 +90,7 @@ class NhanVienTableSeeder extends Seeder
             'nv_gioiTinh'  => true,
             'nv_email'     => "admin@nentang.vn",
             'nv_ngaySinh'  => $today->format('Y-m-d H:i:s'),
-            'nv_diaChi'    => "130 Xô Viết Nghệ Tỉnh, Quận Ninh Kiều, TP Cần Thơ",
+            'nv_diaChi'    => "Quận Ninh Kiều, TP Cần Thơ",
             'nv_dienThoai' => "0915659223",
             'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
             'nv_capNhat'   => $today->format('Y-m-d H:i:s'),

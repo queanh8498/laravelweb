@@ -26,9 +26,6 @@ Route::resource('/admin/danhsachsanpham', 'SanPhamController');
 
 Route::resource('/admin/danhsachloai', 'LoaiController');
 
-// route Danh mục Chủ đề
-
-Route::resource('/admin/danhsachchude', 'ChuDeController');
 
 Auth::routes();
 

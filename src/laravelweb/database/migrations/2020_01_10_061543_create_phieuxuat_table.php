@@ -20,13 +20,14 @@ class CreatePhieuxuatTable extends Migration
             $table->unsignedTinyInteger('nv_nguoiLapPhieu');
             $table->dateTime('px_ngayLapPhieu')->default(DB::raw('CURRENT_TIMESTAMP'))->comment('Ngay` lập phiếu xuất kho');
             $table->unsignedTinyInteger('nv_thuKho')->default('1')->comment('Thủ kho: 1-chưa phân công');
-            $table->string('px_diachi',50);
             $table->tinyInteger('px_trangThai')->default('2')->comment('Trạng thái phiếu xuất: 1-khóa, 2-lập phiếu, 3-thanh toán, 4-xuất kho');
             $table->text('px_ghiChu');
 
             $table->unique(['px_soHoaDon']);
             $table->foreign('nv_nguoiLapPhieu')->references('nv_ma')->on('nhanvien')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->foreign('nv_thuKho')->references('nv_ma')->on('nhanvien')->onDelete('CASCADE')->onUpdate('CASCADE');
+
+            //thêm httt, xuat tu kho nào
         });
     }
 

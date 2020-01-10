@@ -36,6 +36,8 @@ class CreatePhieunhapTable extends Migration
             $table->foreign('nv_keToan')->references('nv_ma')->on('nhanvien')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->foreign('nv_nguoiLapPhieu')->references('nv_ma')->on('nhanvien')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->foreign('nv_thuKho')->references('nv_ma')->on('nhanvien')->onDelete('CASCADE')->onUpdate('CASCADE');
+            //tạo bảng kho nữa
+
         });
     }
 

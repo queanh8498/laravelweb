@@ -16,13 +16,14 @@ class CreateKhuyenmaiSanphamTable extends Migration
         Schema::create('khuyenmai_sanpham', function (Blueprint $table) {
             $table->unsignedTinyInteger('km_ma');
             $table->unsignedBigInteger('sp_ma');
-            $table->unsignedTinyInteger('m_ma');
+           // $table->unsignedTinyInteger('m_ma');
             $table->string('kmsp_giaTri',50)->default('100;0');
             $table->unsignedTinyInteger('kmsp_trangThai')->default('2')->comment('1-stop km; 2-con km');
             
-            $table->primary(['km_ma', 'sp_ma', 'm_ma']);
+            //$table->primary(['km_ma', 'sp_ma', 'm_ma']);
+            $table->primary(['km_ma', 'sp_ma']);
             $table->foreign('km_ma')->references('km_ma')->on('khuyenmai')->onDelete('CASCADE')->onUpdate('CASCADE');
-            $table->foreign('m_ma')->references('m_ma')->on('mau')->onDelete('CASCADE')->onUpdate('CASCADE');
+            //$table->foreign('m_ma')->references('m_ma')->on('mau')->onDelete('CASCADE')->onUpdate('CASCADE');
             $table->foreign('sp_ma')->references('sp_ma')->on('sanpham')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
