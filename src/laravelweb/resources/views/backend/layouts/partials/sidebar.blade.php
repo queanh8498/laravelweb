@@ -169,15 +169,7 @@
                     </a>
                     
                 </li>
-                <li class="has-subnav">
-                    <a href="{{ route('danhsachchude.index') }}">
-                       <i class="fa fa-folder-open fa-2x"></i>
-                        <span class="nav-text">
-                            Chủ đề
-                        </span>
-                    </a>
-                   
-                </li>
+            
                 <li>
                     <a href="#">
                         <i class="fa fa-bar-chart-o fa-2x"></i>

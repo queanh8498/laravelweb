@@ -20,9 +20,10 @@ class ChitietNhapTableSeeder extends Seeder
                 'pn_ma'                   => $i,
                 'sp_ma'                   => $i,
                 'k_ma'                   => $i,
+                'dvt_ma'                   => 1,
                 //'m_ma'                    => $i,
-                'ctn_soLuong'             => $i,
-                'ctn_donGia'              => $i
+                'ctn_soLuong'             => 100*$i,
+                'ctn_donGia'              => 25000*$i
             ]);
         }
         DB::table('chitietnhap')->insert($list);  
