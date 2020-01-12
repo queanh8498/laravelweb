@@ -169,7 +169,11 @@
                     </a>
                     
                 </li>
+<<<<<<< HEAD
             
+=======
+              
+>>>>>>> fc12497913bb99c8bf7c1aebddde3cb064676fef
                 <li>
                     <a href="#">
                         <i class="fa fa-bar-chart-o fa-2x"></i>

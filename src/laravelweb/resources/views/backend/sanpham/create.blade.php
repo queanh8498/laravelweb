@@ -60,11 +60,11 @@ Thêm mới sản phẩm
     </div>
     <div class="form-group">
         <label for="sp_taoMoi">Ngày tạo mới</label>
-        <input type="text" class="form-control" id="sp_taoMoi" name="sp_taoMoi" value="{{ old('sp_taoMoi') }}" data-mask-datetime>
+        <input type="date" class="form-control" id="sp_taoMoi" name="sp_taoMoi" value="{{ old('sp_taoMoi') }}" data-mask-datetime>
     </div>
     <div class="form-group">
         <label for="sp_capNhat">Ngày cập nhật</label>
-        <input type="text" class="form-control" id="sp_capNhat" name="sp_capNhat" value="{{ old('sp_capNhat') }}" data-mask-datetime>
+        <input type="date" class="form-control" id="sp_capNhat" name="sp_capNhat" value="{{ old('sp_capNhat') }}" data-mask-datetime>
     </div>
     <select name="sp_trangThai" class="form-control">
         <option value="1" {{ old('sp_trangThai') == 1 ? "selected" : "" }}>Khóa</option>

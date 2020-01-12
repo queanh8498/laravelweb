@@ -198,7 +198,23 @@ class SanPhamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $sp = SanPham::where("sp_ma",  $id)->first();
+        if(empty($sp) == false)
+        {
+            // DELETE các dòng liên quan trong table `HinhAnh`
+            foreach($sp->hinhanhlienquan()->get() as $hinhAnh)
+            {
+                // Xóa hình cũ để tránh rác
+                Storage::delete('public/photos/' . $hinhAnh->ha_ten);
+                // Xóa record
+                $hinhAnh->delete();
+            }
+            // Xóa hình cũ để tránh rác
+            Storage::delete('public/photos/' . $sp->sp_hinh);
+        }
+        $sp->delete();
+        Session::flash('alert-info', 'Xóa sản phẩm thành công ^^~!!!');
+        return redirect()->route('danhsachsanpham.index');
     }
 
     public function print()
