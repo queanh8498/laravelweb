@@ -113,6 +113,7 @@ return array(
     'Doctrine\\Instantiator\\Exception\\UnexpectedValueException' => $vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/UnexpectedValueException.php',
     'Doctrine\\Instantiator\\Instantiator' => $vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator/Instantiator.php',
     'Doctrine\\Instantiator\\InstantiatorInterface' => $vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator/InstantiatorInterface.php',
+    'DonvitinhTableSeeder' => $baseDir . '/database/seeds/DonvitinhTableSeeder.php',
     'Dotenv\\Dotenv' => $vendorDir . '/vlucas/phpdotenv/src/Dotenv.php',
     'Dotenv\\Environment\\AbstractVariables' => $vendorDir . '/vlucas/phpdotenv/src/Environment/AbstractVariables.php',
     'Dotenv\\Environment\\Adapter\\AdapterInterface' => $vendorDir . '/vlucas/phpdotenv/src/Environment/Adapter/AdapterInterface.php',
@@ -1294,11 +1295,6 @@ return array(
     'Illuminate\\Pagination\\PaginationServiceProvider' => $vendorDir . '/laravel/framework/src/Illuminate/Pagination/PaginationServiceProvider.php',
     'Illuminate\\Pagination\\Paginator' => $vendorDir . '/laravel/framework/src/Illuminate/Pagination/Paginator.php',
     'Illuminate\\Pagination\\UrlWindow' => $vendorDir . '/laravel/framework/src/Illuminate/Pagination/UrlWindow.php',
-    'Illuminate\\PhpVnDataGenerator\\VnBase' => $vendorDir . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnBase.php',
-    'Illuminate\\PhpVnDataGenerator\\VnBigNumber' => $vendorDir . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnBigNumber.php',
-    'Illuminate\\PhpVnDataGenerator\\VnFullname' => $vendorDir . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnFullname.php',
-    'Illuminate\\PhpVnDataGenerator\\VnPersonalInfo' => $vendorDir . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnPersonalInfo.php',
-    'Illuminate\\PhpVnDataGenerator\\VnTest' => $vendorDir . '/laravel/framework/src/Illuminate/PhpVnDataGenerator/VnTest.php',
     'Illuminate\\Pipeline\\Hub' => $vendorDir . '/laravel/framework/src/Illuminate/Pipeline/Hub.php',
     'Illuminate\\Pipeline\\Pipeline' => $vendorDir . '/laravel/framework/src/Illuminate/Pipeline/Pipeline.php',
     'Illuminate\\Pipeline\\PipelineServiceProvider' => $vendorDir . '/laravel/framework/src/Illuminate/Pipeline/PipelineServiceProvider.php',
@@ -2872,6 +2868,7 @@ return array(
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+<<<<<<< HEAD
     'Spatie\\Permission\\Commands\\CacheReset' => $vendorDir . '/spatie/laravel-permission/src/Commands/CacheReset.php',
     'Spatie\\Permission\\Commands\\CreatePermission' => $vendorDir . '/spatie/laravel-permission/src/Commands/CreatePermission.php',
     'Spatie\\Permission\\Commands\\CreateRole' => $vendorDir . '/spatie/laravel-permission/src/Commands/CreateRole.php',
@@ -2895,6 +2892,8 @@ return array(
     'Spatie\\Permission\\Traits\\HasPermissions' => $vendorDir . '/spatie/laravel-permission/src/Traits/HasPermissions.php',
     'Spatie\\Permission\\Traits\\HasRoles' => $vendorDir . '/spatie/laravel-permission/src/Traits/HasRoles.php',
     'Spatie\\Permission\\Traits\\RefreshesPermissionCache' => $vendorDir . '/spatie/laravel-permission/src/Traits/RefreshesPermissionCache.php',
+=======
+>>>>>>> 8c7b26ea0ea3ee28a08883387ac07219636963ee
     'Symfony\\Component\\Console\\Application' => $vendorDir . '/symfony/console/Application.php',
     'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => $vendorDir . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
     'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => $vendorDir . '/symfony/console/CommandLoader/ContainerCommandLoader.php',
@@ -3641,7 +3640,10 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+<<<<<<< HEAD
     'VanchuyenTableSeeder' => $baseDir . '/database/seeds/VanChuyenTableSeeder.php',
+=======
+>>>>>>> 8c7b26ea0ea3ee28a08883387ac07219636963ee
     'Webmozart\\Assert\\Assert' => $vendorDir . '/webmozart/assert/src/Assert.php',
     'Whoops\\Exception\\ErrorException' => $vendorDir . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
     'Whoops\\Exception\\Formatter' => $vendorDir . '/filp/whoops/src/Whoops/Exception/Formatter.php',

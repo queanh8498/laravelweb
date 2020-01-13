@@ -31,7 +31,6 @@ class CreateSanphamTable extends Migration
                                 ->onUpdate('CASCADE');
         });
     }
-
     /**
      * Reverse the migrations.
      *
