@@ -22,8 +22,11 @@ Route::get('/admin/danhsachsanpham/print', 'SanPhamController@print')->name('dan
 
 Route::resource('/admin/danhsachsanpham', 'SanPhamController');
 
+<<<<<<< HEAD
 //Route::get('/admin/danhsachsanpham', 'SanPhamController')->middleware('auth');
 
+=======
+>>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
 
 // route Danh mục Loại
 
