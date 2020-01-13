@@ -15,7 +15,7 @@ class GopYTableSeeder extends Seeder
         $list = [];
        
 
-        for ($i=1; $i <= 10; $i++) {
+        for ($i=1; $i <= 5; $i++) {
             $today = new DateTime();
             array_push($list, [
                 'gy_thoiGian'             => $today->format('Y-m-d H:i:s'),

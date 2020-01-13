@@ -12,16 +12,17 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
          // Chạy câu lệnh `php artisan db:seed`
+        $this->call(DonvitinhTableSeeder::class);
         $this->call(KhachHangTableSeeder::class);
         $this->call(LoaiTableSeeder::class);
         $this->call(QuyenTableSeeder::class);
         $this->call(ThanhToanTableSeeder::class);
-        //$this->call(VanChuyenTableSeeder::class);
+        $this->call(VanChuyenTableSeeder::class);
         $this->call(XuatXuTableSeeder::class);
         $this->call(NhaCungCapTableSeeder::class);
         $this->call(NhanVienTableSeeder::class);
         $this->call(SanPhamTableSeeder::class);
-        //$this->call(HinhAnhTableSeeder::class);
+        $this->call(HinhAnhTableSeeder::class);
         $this->call(GopYTableSeeder::class);
         $this->call(KhoTableSeeder::class);
         $this->call(PhieuNhapTableSeeder::class);
