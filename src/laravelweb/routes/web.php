@@ -22,6 +22,7 @@ Route::get('/admin/danhsachsanpham/print', 'SanPhamController@print')->name('dan
 
 Route::resource('/admin/danhsachsanpham', 'SanPhamController');
 
+
 // route Danh mục Loại
 
 Route::resource('/admin/danhsachloai', 'LoaiController');

@@ -11,9 +11,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // Chạy câu lệnh `php artisan db:seed`
-        $this->call(KhoTableSeeder::class);
+         // Chạy câu lệnh `php artisan db:seed`
+        $this->call(KhachHangTableSeeder::class);
         $this->call(LoaiTableSeeder::class);
+        $this->call(QuyenTableSeeder::class);
+        $this->call(ThanhToanTableSeeder::class);
+        //$this->call(VanChuyenTableSeeder::class);
+        $this->call(XuatXuTableSeeder::class);
+        $this->call(NhaCungCapTableSeeder::class);
+        $this->call(NhanvienTableSeeder::class);
+        $this->call(SanphamTableSeeder::class);
+        //$this->call(HinhanhTableSeeder::class);
+        $this->call(GopYTableSeeder::class);
+        $this->call(KhoTableSeeder::class);
+        $this->call(PhieuNhapTableSeeder::class);
+        $this->call(ChitietNhapTableSeeder::class);
+
+       
         
         // TODO: bổ sung các seeder còn lại theo thứ tự chạy~
     }

@@ -18,6 +18,7 @@ class SanPhamTableSeeder extends Seeder
     public function run()
     {
         //
+        
         $faker = Faker\Factory::create('vi-VN'); //Faker cho phép Developer giả lập các dữ liệu mẫu
         $now = new Carbon('2019-11-28','Asia/Ho_Chi_Minh'); //Đây là một thư viên PHP giúp cho Developer làm việc với ngày giờ
         $uFN = new VnFullname();
