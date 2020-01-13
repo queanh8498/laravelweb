@@ -14,12 +14,12 @@ class HinhAnhTableSeeder extends Seeder
         //
         $list = [];
        
-        for ($i=1; $i <= 20; $i++) {
+        for ($i=1; $i <= 5; $i++) {
             $today = new DateTime();
             array_push($list, [
                 'sp_ma'                   => $i,
                 'ha_stt'                  => $i,
-                'ha_ten'                  => "ha_ten $i"
+                'ha_ten'                  => "ha_ten $i nè"
             ]);
         }
         DB::table('hinhanh')->insert($list);
