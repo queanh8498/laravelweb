@@ -21,17 +21,6 @@ Route::get('/admin/danhsachsanpham/excel', 'SanPhamController@excel')->name('dan
 Route::get('/admin/danhsachsanpham/print', 'SanPhamController@print')->name('danhsachsanpham.print');
 
 Route::resource('/admin/danhsachsanpham', 'SanPhamController');
-<<<<<<< HEAD
-    //->middleware('auth')
-    //->name('backend.sanpham.index');
-=======
-
-<<<<<<< HEAD
-//Route::get('/admin/danhsachsanpham', 'SanPhamController')->middleware('auth');
-
-=======
->>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
->>>>>>> 0366a1524d0c3a9274438aaa4892deed98a695b9
 
 // route Danh mục Loại
 
