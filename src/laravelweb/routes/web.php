@@ -21,7 +21,8 @@ Route::get('/admin/danhsachsanpham/excel', 'SanPhamController@excel')->name('dan
 Route::get('/admin/danhsachsanpham/print', 'SanPhamController@print')->name('danhsachsanpham.print');
 
 Route::resource('/admin/danhsachsanpham', 'SanPhamController');
-
+    //->middleware('auth')
+    //->name('backend.sanpham.index');
 
 // route Danh mục Loại
 
