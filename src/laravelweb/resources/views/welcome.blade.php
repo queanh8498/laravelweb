@@ -88,7 +88,12 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+<<<<<<< HEAD
+                    <a href="{{ route('backend.sanpham.index') }}">Danh sách sản phẩm </a>
+
+=======
                     <a href="{{ route('backend.sanpham.index') }}">Sản phẩm Backend</a>
+>>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
                 </div>
             </div>
         </div>

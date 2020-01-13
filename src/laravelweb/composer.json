@@ -15,8 +15,13 @@
         "php": ">=7.0.0",
         "fideloper/proxy": "~4.0",
         "laravel/framework": "5.8.*",
+<<<<<<< HEAD
+        "laravel/tinker": "~1.0",
+        "spatie/laravel-permission": "^3.5"
+=======
         "laravel/tinker": "~1.0"
 >>>>>>> 8c7b26ea0ea3ee28a08883387ac07219636963ee
+>>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
     },
     "require-dev": {
         "filp/whoops": "~2.0",
