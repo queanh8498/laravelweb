@@ -10,6 +10,9 @@ use App\Hinhanh;
 use Session;
 use Storage;
 
+use App\Exports\SanPhamExport;
+use Maatwebsite\Excel\Facades\Excel as Excel;
+
 
 class SanPhamController extends Controller
 {
@@ -238,23 +241,18 @@ class SanPhamController extends Controller
     }
 
     /**
- * Action xuất Excel
- */
+     * Action xuất Excel
+     */
     public function excel() 
     {
-        /* Code dành cho việc debug
-        - Khi debug cần hiển thị view để xem trước khi Export Excel
-        */
-        $ds_sanpham = Sanpham::all();
-        $ds_loai    = Loai::all();
-        $data = [
-            'danhsachsanpham' => $ds_sanpham,
-            'danhsachloai'    => $ds_loai,
-        ];
-        return view('sanpham.excel')
-            ->with('danhsachsanpham', $ds_sanpham)
-            ->with('danhsachloai', $ds_loai);
-
-        return Excel::download(new SanPhamExport, 'danhsachsanpham.xlsx');
+    /* Code dành cho việc debug
+    - Khi debug cần hiển thị view để xem trước khi Export Excel
+    */
+    // $ds_sanpham = Sanpham::all();
+    // $ds_loai    = Loai::all();
+    // return view('sanpham.excel')
+    //     ->with('danhsachsanpham', $ds_sanpham)
+    //     ->with('danhsachloai', $ds_loai);
+    return Excel::download(new SanPhamExport, 'danhsachsanpham.xlsx');
     }
 }

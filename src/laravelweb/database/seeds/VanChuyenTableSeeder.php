@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class VanchuyenTableSeeder extends Seeder
+class VanChuyenTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

@@ -35,7 +35,7 @@ class SanPhamTableSeeder extends Seeder
             $lstLSP[] = $value->l_ma;
         }
 
-        for ($i =1; $i <=5; $i++){ //tao 20 dong du lieu
+        for ($i =1; $i <=5; $i++){ //tao 5 dong du lieu
             $today = new DateTime();
             array_push($list,[
                 'sp_ten' => $faker->text(100),
