@@ -13,4 +13,7 @@ kho: id, tenkho,diachikho, nguoiphutrach, sdtngdo.
 phieunhapchitiet: id, phieunhapid, idkho, sp_Ten, soluongsp, gianhap, donvitinh
 phieunhap: id, maphieu, ngaylap
 phieuxuatchitiet: id, phieuxuatid, idkho, sp_Ten, soluongsp, gia, donvitinh
-haha xxx
+
+
+generate optimized autoload file: (seeder not exist) :
+--> composer dump-autoload
