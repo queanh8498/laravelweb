@@ -24,11 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call(NhanVienTableSeeder::class);
         $this->call(SanPhamTableSeeder::class);
         $this->call(HinhAnhTableSeeder::class);
-<<<<<<< HEAD
         //$this->call(GopYTableSeeder::class);
-=======
-        $this->call(GopYTableSeeder::class);
->>>>>>> c452d43ddd4d4533426c612841e4d416163e9618
         $this->call(KhoTableSeeder::class);
         $this->call(PhieuNhapTableSeeder::class);
         $this->call(ChitietNhapTableSeeder::class);
