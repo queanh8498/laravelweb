@@ -42,3 +42,17 @@ Route::get('/lien-he', 'Frontend\FrontendController@contact')->name('frontend.co
 
 //tạo route sendMailContactForm
 Route::post('/lien-he/goi-loi-nhan', 'Frontend\FrontendController@sendMailContactForm')->name('frontend.contact.sendMailContactForm');
+
+//Tạo trang danh sách Sản phẩm (product)
+Route::get('/san-pham', 'Frontend\FrontendController@product')->name('frontend.product');
+
+//Tạo trang Chi tiết Sản phẩm (product-detail)
+Route::get('/san-pham/{id}', 'FrontendController@productDetail')->name('frontend.productDetail');
+
+//Tạo trang thanh toán (checkout)
+Route::get('/gio-hang', 'Frontend\FrontendController@cart')->name('frontend.cart');
+
+//Tạo đơn hàng và gởi mail xác nhận
+Route::get('/gio-hang', 'Frontend\FrontendController@cart')->name('frontend.cart');
+Route::post('/dat-hang', 'Frontend\FrontendController@order')->name('frontend.order');
+Route::get('/dat-hang/hoan-tat', 'Frontend\FrontendController@orderFinish')->name('frontend.orderFinish');
