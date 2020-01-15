@@ -10,7 +10,10 @@
 
                 <div class="right-top-bar flex-w h-full">
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        Help & FAQs
+                        Login
+                    </a>
+                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                        Register
                     </a>
 
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
@@ -22,8 +25,12 @@
                     </a>
 
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        USD
+                        VI
                     </a>
+
+                    <!-- <a href="#" class="flex-c-m trans-04 p-lr-25">
+                        USD
+                    </a> -->
                 </div>
             </div>
         </div>
