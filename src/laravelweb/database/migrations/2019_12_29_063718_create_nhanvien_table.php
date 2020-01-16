@@ -26,12 +26,8 @@ class CreateNhanvienTable extends Migration
             $table->timestamp('nv_taoMoi')->nullable();
             $table->timestamp('nv_capNhat')->nullable();
             $table->unsignedTinyInteger('nv_trangThai')->default('2');
-            $table->unsignedTinyInteger('q_ma')->comment('1-Giám đốc, 2-Quản trị, 3-Quản lý kho, 4-Kế toán, 5-Nhân viên bán hàng, 6-Nhân viên giao hàng');
-            
-
             
             $table->unique(['nv_taiKhoan', 'nv_email', 'nv_dienThoai']);
-            $table->foreign('q_ma')->references('q_ma')->on('quyen')->onDelete('CASCADE')->onUpdate('CASCADE');
         });
     }
 

@@ -14,9 +14,7 @@ class DatabaseSeeder extends Seeder
          // Chạy câu lệnh `php artisan db:seed`
         $this->call(DonvitinhTableSeeder::class);
         $this->call(KhachHangTableSeeder::class);
-        $this->call(LoaiTableSeeder::class);
-        $this->call(QuyenTableSeeder::class);
-        //$this->call(DonvitinhTableSeeder::class);
+        $this->call(LoaiTableSeeder::class);    
         $this->call(ThanhToanTableSeeder::class);
         $this->call(VanChuyenTableSeeder::class);
         $this->call(XuatXuTableSeeder::class);
@@ -26,7 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ChucVuTableSeeder::class);
         $this->call(SanPhamTableSeeder::class);
         $this->call(HinhAnhTableSeeder::class);
-        //$this->call(GopYTableSeeder::class);
         $this->call(KhoTableSeeder::class);
         $this->call(PhieuNhapTableSeeder::class);
         $this->call(ChitietNhapTableSeeder::class);

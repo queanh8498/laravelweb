@@ -24,7 +24,7 @@ class NhanVien extends Authenticatable implements AuthenticatableContract
     
     protected $guard_name = 'web';
 
-    protected $fillable     = ['nv_taiKhoan', 'nv_matKhau', 'nv_hoTen', 'nv_gioiTinh', 'nv_email', 'nv_ngaySinh', 'nv_diaChi', 'nv_dienThoai', 'nv_taoMoi', 'nv_capNhat', 'nv_trangThai', 'q_ma'];
+    protected $fillable     = ['nv_taiKhoan', 'nv_matKhau', 'nv_hoTen', 'nv_gioiTinh', 'nv_email', 'nv_ngaySinh', 'nv_diaChi', 'nv_dienThoai', 'nv_taoMoi', 'nv_capNhat', 'nv_trangThai'];
     protected $guarded      = ['nv_ma'];
     protected $primaryKey   = 'nv_ma';
     protected $dates        = ['nv_ngaySinh', 'nv_taoMoi', 'nv_capNhat'];

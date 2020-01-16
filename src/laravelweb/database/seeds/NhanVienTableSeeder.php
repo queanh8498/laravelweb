@@ -15,16 +15,16 @@ class NhanVienTableSeeder extends Seeder
      */
     public function run()
     {
-        $list = [];
-        $uFN = new VnFullname();
-        $uPI = new VnPersonalInfo();
+         $list = [];
+        // $uFN = new VnFullname();
+        // $uPI = new VnPersonalInfo();
         
         //1-Giám đốc, 2-Quản trị, 3-Quản lý kho, 4-Kế toán, 5-Nhân viên bán hàng, 6-Nhân viên giao hàng
-        $roles     = 6;
-        $employees = [1,   1,  1,  1,  2,  2];
-        $ages      = [30, 25, 22, 20, 18, 18];
-        $genders   = [VnBase::VnFemale, VnBase::VnMale, VnBase::VnMale, VnBase::VnFemale, VnBase::VnFemale, VnBase::VnFemale];
-        $today = new DateTime('2019-11-27 09:00:00');
+        // $roles     = 6;
+        // $employees = [1,   1,  1,  1,  2,  2];
+        // $ages      = [30, 25, 22, 20, 18, 18];
+        // $genders   = [VnBase::VnFemale, VnBase::VnMale, VnBase::VnMale, VnBase::VnFemale, VnBase::VnFemale, VnBase::VnFemale];
+         $today = new DateTime('2019-11-27 09:00:00');
         
         array_push($list, [
             'nv_ma'        => 1,
@@ -37,52 +37,92 @@ class NhanVienTableSeeder extends Seeder
             'nv_diaChi'    => "queanh",
             'nv_dienThoai' => "01234567890",
             'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
-            'nv_capNhat'   => $today->format('Y-m-d H:i:s'),
-            'q_ma'         => 6
+            'nv_capNhat'   => $today->format('Y-m-d H:i:s')
         ]);
-        for ($i=0, $count = 2; $i < $roles; $i++) {
-            for ($j=0; $j < $employees[$i]; $j++, $count++) { 
-                $gender   = $genders[$i];
-                $name     = $uFN->FullName($gender);
-                $age      = $uPI->Age($ages[$i]);
-                $birthYear= $uPI->BirthYearValue($age);
-                $birthdate= $uPI->Birthdate($birthYear);
-                $username = $uPI->Username($name, "", "", "", VnBase::VnLowerCase, VnBase::VnTrimShorthand, VnBase::VnTrue);
-                $email    = "$username@sunshine.com";
-                $password = bcrypt($username."@".$birthYear);
-                $phone    = $uPI->Mobile("", VnBase::VnFalse);
-                $address  = $uPI->Address();
-                array_push($list, [
-                    'nv_ma'        => $count,
-                    'nv_taiKhoan'  => $username,
-                    'nv_matKhau'   => $password,
-                    'nv_hoTen'     => $name,
-                    'nv_gioiTinh'  => $gender == VnBase::VnMale,
-                    'nv_email'     => $email,
-                    'nv_ngaySinh'  => $birthdate["birthdate"],
-                    'nv_diaChi'    => $address,
-                    'nv_dienThoai' => $phone,
-                    'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
-                    'nv_capNhat'   => $today->format('Y-m-d H:i:s'),
-                    'q_ma'         => $i+1
-                ]);
-                if ($i == 0) {
-                    DB::table('nhacungcap')->insert([[
-                        'ncc_ma'        => 1,
-                        'ncc_ten'       => "sunshine.com",
-                        'ncc_daiDien'   => $name,
-                        'ncc_diaChi'    => "1 Lý Tự Trọng, P. An Cư, Q. Ninh Kiều, TP. Cần Thơ",
-                        'ncc_dienThoai' => "0955667788",
-                        'ncc_email'     => "cham.soc.khach.hang@sunshine.com",
-                        'ncc_taoMoi'    => $today->format('Y-m-d H:i:s'),
-                        'ncc_capNhat'   => $today->format('Y-m-d H:i:s'),
-                        'xx_ma'         => 1
-                    ]]);
-                }
-            }
-        }
-        // Admin
         array_push($list, [
+            'nv_ma'        => 2,
+            'nv_taiKhoan'  => "minhminh",
+            'nv_matKhau'   => bcrypt('123456'),
+            'nv_hoTen'     => "Nhật Minh",
+            'nv_gioiTinh'  => true,
+            'nv_email'     => "nhatminh@sunshine.com",
+            'nv_ngaySinh'  => $today->format('Y-m-d H:i:s'),
+            'nv_diaChi'    => "minhminh",
+            'nv_dienThoai' => "01234567892",
+            'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
+            'nv_capNhat'   => $today->format('Y-m-d H:i:s')
+        ]);
+        array_push($list, [
+            'nv_ma'        => 3,
+            'nv_taiKhoan'  => "didi",
+            'nv_matKhau'   => bcrypt('123456'),
+            'nv_hoTen'     => "Di Di",
+            'nv_gioiTinh'  => true,
+            'nv_email'     => "didi@sunshine.com",
+            'nv_ngaySinh'  => $today->format('Y-m-d H:i:s'),
+            'nv_diaChi'    => "didi",
+            'nv_dienThoai' => "01234567893",
+            'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
+            'nv_capNhat'   => $today->format('Y-m-d H:i:s')
+        ]);
+        array_push($list, [
+            'nv_ma'        => 4,
+            'nv_taiKhoan'  => "quangdu",
+            'nv_matKhau'   => bcrypt('123456'),
+            'nv_hoTen'     => "Quang Dũ",
+            'nv_gioiTinh'  => true,
+            'nv_email'     => "quangdu@sunshine.com",
+            'nv_ngaySinh'  => $today->format('Y-m-d H:i:s'),
+            'nv_diaChi'    => "quangdu",
+            'nv_dienThoai' => "01234567894",
+            'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
+            'nv_capNhat'   => $today->format('Y-m-d H:i:s')
+        ]);
+        // for ($i=0, $count = 2; $i < $roles; $i++) {
+        //     for ($j=0; $j < $employees[$i]; $j++, $count++) { 
+        //         $gender   = $genders[$i];
+        //         $name     = $uFN->FullName($gender);
+        //         $age      = $uPI->Age($ages[$i]);
+        //         $birthYear= $uPI->BirthYearValue($age);
+        //         $birthdate= $uPI->Birthdate($birthYear);
+        //         $username = $uPI->Username($name, "", "", "", VnBase::VnLowerCase, VnBase::VnTrimShorthand, VnBase::VnTrue);
+        //         $email    = "$username@sunshine.com";
+        //         $password = bcrypt($username."@".$birthYear);
+        //         $phone    = $uPI->Mobile("", VnBase::VnFalse);
+        //         $address  = $uPI->Address();
+        //         array_push($list, [
+        //             'nv_ma'        => $count,
+        //             'nv_taiKhoan'  => $username,
+        //             'nv_matKhau'   => $password,
+        //             'nv_hoTen'     => $name,
+        //             'nv_gioiTinh'  => $gender == VnBase::VnMale,
+        //             'nv_email'     => $email,
+        //             'nv_ngaySinh'  => $birthdate["birthdate"],
+        //             'nv_diaChi'    => $address,
+        //             'nv_dienThoai' => $phone,
+        //             'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
+        //             'nv_capNhat'   => $today->format('Y-m-d H:i:s')
+                   
+        //         ]);
+        //         if ($i == 0) {
+        //             DB::table('nhacungcap')->insert([[
+        //                 'ncc_ma'        => 1,
+        //                 'ncc_ten'       => "sunshine.com",
+        //                 'ncc_daiDien'   => $name,
+        //                 'ncc_diaChi'    => "1 Lý Tự Trọng, P. An Cư, Q. Ninh Kiều, TP. Cần Thơ",
+        //                 'ncc_dienThoai' => "0955667788",
+        //                 'ncc_email'     => "cham.soc.khach.hang@sunshine.com",
+        //                 'ncc_taoMoi'    => $today->format('Y-m-d H:i:s'),
+        //                 'ncc_capNhat'   => $today->format('Y-m-d H:i:s'),
+        //                 'xx_ma'         => 1
+        //             ]]);
+        //         }
+        //     }
+
+        //}
+        // Admin
+        array_push($list, 
+        [
             'nv_ma'        => 100,
             'nv_taiKhoan'  => "admin",
             'nv_matKhau'   => bcrypt('123456'),
@@ -93,9 +133,10 @@ class NhanVienTableSeeder extends Seeder
             'nv_diaChi'    => "Quận Ninh Kiều, TP Cần Thơ",
             'nv_dienThoai' => "0915659223",
             'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
-            'nv_capNhat'   => $today->format('Y-m-d H:i:s'),
-            'q_ma'         => 2
+            'nv_capNhat'   => $today->format('Y-m-d H:i:s')
+           
         ]);
+
         DB::table('nhanvien')->insert($list);
     }
 }
