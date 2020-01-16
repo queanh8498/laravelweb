@@ -92,11 +92,11 @@
     <div class="container-fluid purple topBotomBordersIn" style="color: white; font-family: Raleway;  margin: 0 auto;
             padding: 20px 3px;
             text-align: center;">
-    <a >HOME</a>
+    <a>HOME</a>
     <a>ARTICLES</a>
     <a>PORTFOLIO</a>
     <a>ABOUT</a>
-    <a>CONTACT</a>
+    <a><span style="text-transform: uppercase;">WELCOME @if (Auth::check()) {{ auth()->user()->nv_hoTen }} @endif ^^</span> </a>
     </div>
 
 </body>
