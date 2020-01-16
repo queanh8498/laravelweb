@@ -40,20 +40,20 @@
                 <div class="menu-desktop">
                     <ul class="main-menu">
                         <li class="{{ Request::is('') ? 'active-menu' : '' }}">
-                            <a href="">Home</a>
+                            <a href="{{ route('frontend.home') }}">Home</a>
                         </li>
 
                         <li class="{{ Request::is('san-pham') ? 'active-menu' : '' }}">
                             <a href="{{ route('frontend.product') }}">Product</a>
                         </li>
 
-                        <li class="label1" data-label1="hot">
+                        <!-- <li class="label1" data-label1="hot">
                             <a href="shoping-cart.html">Features</a>
-                        </li>
+                        </li> -->
 
-                        <li>
+                        <!-- <li>
                             <a href="blog.html">Blog</a>
-                        </li>
+                        </li> -->
 
                         <li class="{{ Request::is('gioi-thieu') ? 'active-menu' : '' }}">
                             <a href="{{ route('frontend.about') }}">About</a>

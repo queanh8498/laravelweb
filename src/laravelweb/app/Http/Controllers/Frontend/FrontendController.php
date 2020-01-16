@@ -40,7 +40,6 @@ class FrontendController extends Controller
         // Query danh sách Loại
         $danhsachloai = Loai::all();
 
-
         // Hiển thị view `frontend.index` với dữ liệu truyền vào
         return view('frontend.index')
             ->with('ds_top3_newest_loaisanpham', $ds_top3_newest_loaisanpham)
