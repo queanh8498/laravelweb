@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <!-- <div class="p-t-40">
+        <div class="p-t-40">
             <div class="flex-c-m flex-w p-b-18">
                 <a href="#" class="m-all-1">
                     <img src="{{ asset('themes/cozastore/images/icons/icon-pay-01.png') }}" alt="ICON-PAY">
@@ -130,7 +130,7 @@
                 <a href="#" class="m-all-1">
                     <img src="{{ asset('themes/cozastore/images/icons/icon-pay-05.png') }}" alt="ICON-PAY">
                 </a>
-            </div> -->
+            </div>
 
             <p class="stext-107 cl6 txt-center">
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

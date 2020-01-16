@@ -3,7 +3,7 @@
 
 {{-- Thay thế nội dung vào Placeholder `title` của view `frontend.layouts.master` --}}
 @section('title')
-Liên hệ Shop Hoa quả - Ngon Ngon
+Liên hệ Shop Trái Cây - Ngon Ngon
 @endsection
 
 {{-- Thay thế nội dung vào Placeholder `custom-css` của view `frontend.layouts.master` --}}
@@ -26,7 +26,7 @@ Liên hệ Shop Hoa quả - Ngon Ngon
             <div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
                 <form name="contactForm" ng-submit="submitContactForm()" novalidate>
                     <h4 class="mtext-105 cl2 txt-center p-b-30">
-                        Gởi lời nhắn cho công ty Ngon Ngon
+                        Gởi lời nhắn cho công ty Trái cây Ngon Ngon
                     </h4>
 
                     <!-- Div Thông báo lỗi 
@@ -38,6 +38,10 @@ Liên hệ Shop Hoa quả - Ngon Ngon
                             <!-- Thông báo lỗi email -->
                             <li><span class="error" ng-show="contactForm.email.$error.required">Vui lòng nhập email</span></li>
                             <li><span class="error" ng-show="!contactForm.email.$error.required && contactForm.email.$error.pattern">Chỉ chấp nhập GMAIL, vui lòng kiểm tra lại</span></li>
+                            
+                            <!-- Thông báo lỗi dienthoai -->
+                            <li><span class="error" ng-show="contactForm.dienthoai.$error.required">Vui lòng nhập số điện thoại của bạn</span></li>
+                            <li><span class="error" ng-show="contactForm.dienthoai.$error.minlength">Số điện thoại phải > 9 ký tự</span></li>
 
                             <!-- Thông báo lỗi message -->
                             <li><span class="error" ng-show="contactForm.message.$error.required">Vui lòng nhập lời nhắn</span></li>
@@ -54,6 +58,13 @@ Liên hệ Shop Hoa quả - Ngon Ngon
                                         <div class="bor8 m-b-20 how-pos4-parent">
                                             <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Email của bạn" ng-model="email" ng-pattern="/^.+@gmail.com$/" ng-required=true>
                                             <span class="valid" ng-show="userInfo.email.$valid">Hợp lệ</span>
+                                            <img class="how-pos4 pointer-none" src="{{ asset('themes/cozastore/images/icons/icon-email.png') }}" alt="ICON">
+                                        </div>
+
+                                        <!-- Validate số điện thoại -->
+                                        <div class="bor8 m-b-20 how-pos4-parent">
+                                            <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="dienthoai" placeholder="Số điện thoại của bạn" ng-model="dienthoai" ng-minlength="9" ng-required=true>
+                                            <span class="valid" ng-show="userInfo.dienthoai.$valid">Hợp lệ</span>
                                             <img class="how-pos4 pointer-none" src="{{ asset('themes/cozastore/images/icons/icon-email.png') }}" alt="ICON">
                                         </div>
 
@@ -145,10 +156,12 @@ Liên hệ Shop Hoa quả - Ngon Ngon
             if ($scope.contactForm.$valid) {
                 // lấy data của Form
                 var dataInputContactForm = {
+                    "dienthoai": $scope.contactForm.dienthoai.$viewValue,
                     "email": $scope.contactForm.email.$viewValue,
                     "message": $scope.contactForm.message.$viewValue,
                     "_token": "{{ csrf_token() }}",
                 };
+
                 // sử dụng service $http của AngularJS để gởi request POST đến route `frontend.contact.sendMailContactForm`
                 $http({
                     url: "{{ route('frontend.contact.sendMailContactForm') }}",
@@ -162,6 +175,7 @@ Liên hệ Shop Hoa quả - Ngon Ngon
                     swal('Có lỗi trong quá trình gởi mail!', 'Vui lòng thử lại sau vài phút.', 'error');
                     console.log(response);
                 });
+
             }
         };
     });
