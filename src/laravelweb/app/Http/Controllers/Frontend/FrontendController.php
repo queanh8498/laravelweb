@@ -55,8 +55,14 @@ class FrontendController extends Controller
         $query = DB::table('sanpham')->select('*');
         // Kiểm tra điều kiện `searchByLoaiMa`
         $searchByLoaiMa = $request->query('searchByLoaiMa');
+        $searchByTen = $request->query('search-product');
         if ($searchByLoaiMa != null) {
+
         }
+        if ($searchByTen != null) {
+            $query->where('sp_ten','LIKE','%'.$searchByTen.'%');
+        }
+        
 
         $data = $query->get();
         return $data;
@@ -93,6 +99,8 @@ class FrontendController extends Controller
      */
     public function product(Request $request)
     {
+        
+
         // Query tìm danh sách sản phẩm
         $danhsachsanpham = $this->searchSanPham($request);
 
