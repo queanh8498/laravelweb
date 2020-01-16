@@ -28,13 +28,13 @@ class NhanVienTableSeeder extends Seeder
         
         array_push($list, [
             'nv_ma'        => 1,
-            'nv_taiKhoan'  => "unknown",
+            'nv_taiKhoan'  => "queanh",
             'nv_matKhau'   => bcrypt('123456'),
-            'nv_hoTen'     => "Chưa phân công",
+            'nv_hoTen'     => "Quế Anh",
             'nv_gioiTinh'  => true,
-            'nv_email'     => "unknown@sunshine.com",
+            'nv_email'     => "queanh@sunshine.com",
             'nv_ngaySinh'  => $today->format('Y-m-d H:i:s'),
-            'nv_diaChi'    => "unknown",
+            'nv_diaChi'    => "queanh",
             'nv_dienThoai' => "01234567890",
             'nv_taoMoi'    => $today->format('Y-m-d H:i:s'),
             'nv_capNhat'   => $today->format('Y-m-d H:i:s'),

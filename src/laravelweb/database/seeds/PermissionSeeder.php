@@ -13,26 +13,41 @@ class PermissionSeeder extends Seeder
      */
     public function run()
     {
-<<<<<<< HEAD
         //tạo role
-        $role = Role::create(['name' => 'quan_tri']);
-        //tạo quyền
-=======
-        //tao role (vai trò)
-        $role = Role::create(['name' => 'quan_tri']);
+        $role_quantri = Role::create(['name' => 'quantri']);
+        $role_ketoan = Role::create(['name' => 'ketoan']);
+        $role_thukho = Role::create(['name' => 'thukho']);
 
-        //tao quyen
->>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
-        $permission_xem_sp = Permission::create(['name' => 'xem_sp']);
-        $permission_sua_sp = Permission::create(['name' => 'sua_sp']);
-        $permission_xoa_sp = Permission::create(['name' => 'xoa_sp']);
-        $permission_xuat_excel_sp = Permission::create(['name' => 'xuat_excel_sp']);
-<<<<<<< HEAD
+        //tạo quyền
+        $permission_sp_xem = Permission::create(['name' => 'sp_xem']);
+        $permission_sp_them = Permission::create(['name' => 'sp_them']);
+        $permission_sp_sua = Permission::create(['name' => 'sp_sua']);
+        $permission_sp_xoa = Permission::create(['name' => 'sp_xoa']);
+        $permission_sp_excel = Permission::create(['name' => 'sp_excel']);
+        $permission_sp_print = Permission::create(['name' => 'sp_print']);
+        
+        $permission_kho_xem = Permission::create(['name' => 'kho_xem']);
+        $permission_kho_them = Permission::create(['name' => 'kho_them']);
+        $permission_kho_sua = Permission::create(['name' => 'kho_sua']);
+        $permission_kho_xoa = Permission::create(['name' => 'kho_xoa']);
 
         //cấp quyền cho role đã tạo
-        //$role->givePermissionTo($permission_xem_sp);
-        //$permission->assignRole($role);
-=======
->>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
+        $role_quantri->givePermissionTo($permission_sp_xem);
+        $role_quantri->givePermissionTo($permission_sp_them);
+        $role_quantri->givePermissionTo($permission_sp_sua);
+        $role_quantri->givePermissionTo($permission_sp_xoa);
+        $role_quantri->givePermissionTo($permission_sp_excel);
+        $role_quantri->givePermissionTo($permission_sp_print);
+
+        $role_ketoan->givePermissionTo($permission_sp_print);
+        $role_ketoan->givePermissionTo($permission_sp_excel);
+        $role_ketoan->givePermissionTo($permission_sp_xem);
+
+        $role_thukho->givePermissionTo($permission_kho_xem);
+        $role_thukho->givePermissionTo($permission_kho_them);
+        $role_thukho->givePermissionTo($permission_kho_sua);
+        $role_thukho->givePermissionTo($permission_kho_xoa);
+
+
     }
 }

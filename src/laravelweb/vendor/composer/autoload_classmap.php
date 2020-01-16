@@ -77,6 +77,7 @@ return array(
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
     'ChitietNhapTableSeeder' => $baseDir . '/database/seeds/ChitietNhapTableSeeder.php',
+    'ChucVuTableSeeder' => $baseDir . '/database/seeds/ChucVuTableSeeder.php',
     'Complex\\Complex' => $vendorDir . '/markbaker/complex/classes/src/Complex.php',
     'Complex\\Exception' => $vendorDir . '/markbaker/complex/classes/src/Exception.php',
     'Cpdf' => $vendorDir . '/dompdf/dompdf/lib/Cpdf.php',

@@ -26,8 +26,13 @@ Danh sách sản phẩm
 - Theo quy ước, các route đã được đăng ký trong file `web.php` đều phải được đặt tên để dễ dàng bảo trì code sau này.
 - Đường dẫn URL là đường dẫn được tạo ra bằng route có tên `danhsachsanpham.create`
 - Sẽ có dạng http://tenmiencuaban.com/admin/danhsachsanpham/create
--->
-<a href="{{ route('danhsachsanpham.create') }}" class="btn btn-primary" style="font-family: Tohamo; font-size: 18px;">Thêm mới sản phẩm</a><br><br>
+ -->
+@if(Auth::check())
+    @if(auth()->user()->can('sp_them')) 
+    <a href="{{ route('danhsachsanpham.create') }}" class="btn btn-primary" style="font-family: Tohamo; font-size: 18px;">Thêm mới sản phẩm</a><br><br>
+    @endif
+@endif
+
 <!-- Tạo table hiển thị danh sách các sản phẩm -->
 <table class="table table-bordered">
     <thead>
@@ -57,7 +62,12 @@ Danh sách sản phẩm
                     - Các tham số cần truyền vào hàm route() là 1 array[]
                     - Sẽ có dạng http://tenmiencuaban.com/admin/danhsachsanpham/{id}/edit
                     -->
+                    
+                @if(Auth::check())
+                    @if(auth()->user()->can('sp_sua')) 
                     <a href="{{ route('danhsachsanpham.edit', ['id' => $sp->sp_ma]) }}" class="btn btn-primary pull-left">Sửa</a>
+                    @endif
+                @endif
                     <!-- Tạo nút Xóa sản phẩm 
                     - Theo quy ước, các route đã được đăng ký trong file `web.php` đều phải được đặt tên để dễ dàng bảo trì code sau này.
                     - Đường dẫn URL là đường dẫn được tạo ra bằng route có tên `danhsachsanpham.destroy`
@@ -65,6 +75,9 @@ Danh sách sản phẩm
                     - Các tham số cần truyền vào hàm route() là 1 array[]
                     - Sẽ có dạng http://tenmiencuaban.com/admin/danhsachsanpham/{id}
                     -->
+                    
+                @if(Auth::check())
+                    @if(auth()->user()->can('sp_xoa')) 
                     <form method="post" action="{{ route('danhsachsanpham.destroy', ['id' => $sp->sp_ma]) }}" class="pull-left">
                         <!-- Khi gởi Request Xóa dữ liệu, Laravel Framework mặc định chỉ chấp nhận thực thi nếu có gởi kèm field `_method=DELETE` -->
                         <input type="hidden" name="_method" value="DELETE" />
@@ -75,6 +88,8 @@ Danh sách sản phẩm
                         {{ csrf_field() }}
                         <button type="submit" class="btn btn-danger">Xóa</button>
                     </form>
+                    @endif
+                @endif
                 </td>
             </tr>
         @endforeach

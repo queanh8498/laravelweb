@@ -10,10 +10,7 @@ class User extends Authenticatable
 {
     use Notifiable;
     use HasRoles;
-<<<<<<< HEAD
-=======
 
->>>>>>> 323786607dc8b692a3f1180fdef80f65aead5f9b
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +19,6 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *

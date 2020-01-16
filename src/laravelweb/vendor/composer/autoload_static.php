@@ -560,6 +560,7 @@ class ComposerStaticInit805fe0d5bf5c96a623c7458a8d061be1
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'ChitietNhapTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChitietNhapTableSeeder.php',
+        'ChucVuTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChucVuTableSeeder.php',
         'Complex\\Complex' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Complex.php',
         'Complex\\Exception' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Exception.php',
         'Cpdf' => __DIR__ . '/..' . '/dompdf/dompdf/lib/Cpdf.php',

@@ -71,7 +71,7 @@ return [
         // ],
         'users' => [
             'driver' => 'custom',
-            'model' => App\Nhanvien::class,
+            'model' => App\NhanVien::class,
         ],
 
         // 'users' => [

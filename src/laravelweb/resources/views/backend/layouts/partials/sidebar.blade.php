@@ -151,15 +151,17 @@
                     </a>
                   
                 </li>
+               
                 <li class="has-subnav">
                     <a href="{{ route('danhsachsanpham.index') }}">
-                        <i class="fa fa-laptop fa-2x"></i>
+                    <i class="fa fa-list fa-2x"></i>
                         <span class="nav-text">
-                            Danh sách sản phẩm
+                        Danh sách sản phẩm
                         </span>
                     </a>
                     
                 </li>
+                  
                 <li class="has-subnav">
                     <a href="{{ route('danhsachloai.index') }}">
                        <i class="fa fa-list fa-2x"></i>

@@ -14,6 +14,10 @@ use App\Exports\SanPhamExport;
 use Maatwebsite\Excel\Facades\Excel as Excel;
 
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Middleware\Authenticate;
+
+
 class SanPhamController extends Controller
 {
     /**

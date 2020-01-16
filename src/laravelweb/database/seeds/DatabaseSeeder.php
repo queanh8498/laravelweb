@@ -22,6 +22,8 @@ class DatabaseSeeder extends Seeder
         $this->call(XuatXuTableSeeder::class);
         $this->call(NhaCungCapTableSeeder::class);
         $this->call(NhanVienTableSeeder::class);
+        $this->call(PermissionSeeder::class);
+        $this->call(ChucVuTableSeeder::class);
         $this->call(SanPhamTableSeeder::class);
         $this->call(HinhAnhTableSeeder::class);
         //$this->call(GopYTableSeeder::class);
