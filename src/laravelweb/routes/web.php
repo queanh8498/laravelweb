@@ -72,6 +72,10 @@ Route::get('/capquyen', function(){
 });
 
 Auth::routes();
+//sua
+//Route::get('/login', 'HomeController@index')->name('login');
+//Route::get('/login', 'Backend\BackendController')->name('login');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 

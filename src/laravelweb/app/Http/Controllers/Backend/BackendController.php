@@ -13,6 +13,6 @@ class BackendController extends Controller
         $nv = Nhanvien::find($nv_ma);
         $nv->nv_trangThai = 2; // Khả dụng
         $nv->save();
-        return redirect()->route('home');
+        return redirect()->route('admin/danhsachsanpham');
     }
 }
