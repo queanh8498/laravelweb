@@ -3,31 +3,31 @@
         <div class="row">
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Categories
+                    {{ __('laravelweb.danhmuc') }}
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Women
+                            {{ __('laravelweb.traicaynhapkhau') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Men
+                            {{ __('laravelweb.traicaymienBac') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shoes
+                            {{ __('laravelweb.traicaymienTrung') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Watches
+                            {{ __('laravelweb.traicaymienNam') }}
                         </a>
                     </li>
                 </ul>
@@ -35,43 +35,44 @@
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Help
+                    {{ __('laravelweb.trogiup') }}
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Track Order
+                            {{ __('laravelweb.theodoidonhang') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Returns
+                            {{ __('laravelweb.faqs') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shipping
+                            {{ __('laravelweb.hoantra') }}
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            FAQs
+                            {{ __('laravelweb.vanchuyen') }}
                         </a>
                     </li>
+
                 </ul>
             </div>
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    GET IN TOUCH
+                    {{ __('laravelweb.lienhe') }}
                 </h4>
 
                 <p class="stext-107 cl7 size-201">
-                    Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+                    {{ __('laravelweb.lienhecuthe') }}
                 </p>
 
                 <div class="p-t-27">
@@ -91,7 +92,7 @@
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Newsletter
+                    {{ __('laravelweb.bantin') }}
                 </h4>
 
                 <form>
@@ -102,7 +103,7 @@
 
                     <div class="p-t-18">
                         <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                            Subscribe
+                            {{ __('laravelweb.dangkybantin') }}
                         </button>
                     </div>
                 </form>
@@ -111,7 +112,7 @@
 
         <div class="p-t-40">
             <div class="flex-c-m flex-w p-b-18">
-                <a href="#" class="m-all-1">
+                <!-- <a href="#" class="m-all-1">
                     <img src="{{ asset('themes/cozastore/images/icons/icon-pay-01.png') }}" alt="ICON-PAY">
                 </a>
 
@@ -129,7 +130,7 @@
 
                 <a href="#" class="m-all-1">
                     <img src="{{ asset('themes/cozastore/images/icons/icon-pay-05.png') }}" alt="ICON-PAY">
-                </a>
+                </a> -->
             </div>
 
             <p class="stext-107 cl6 txt-center">

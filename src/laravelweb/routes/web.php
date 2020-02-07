@@ -16,6 +16,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Tạo route cho phép chuyển đổi ngôn ngữ
+Route::get('setLocale/{locale}', function ($locale) {
+    if (in_array($locale, Config::get('app.locales'))) {
+      Session::put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('app.setLocale');
+
+
 // route Danh mục Sản phẩm
 Route::get('/admin/danhsachsanpham/index', 'SanPhamController@index')->name('danhsachsanpham.index');
 Route::get('/admin/danhsachsanpham/create', 'SanPhamController@create')->name('danhsachsanpham.create');

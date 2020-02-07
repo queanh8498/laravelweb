@@ -77,8 +77,10 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
+    'locale' => 'vi',
 
-    'locale' => 'en',
+    // Bổ sung thêm danh sách các ngôn ngữ
+    'locales' => ['vi', 'en'],
 
     /*
     |--------------------------------------------------------------------------

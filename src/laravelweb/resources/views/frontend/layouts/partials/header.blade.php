@@ -5,25 +5,28 @@
         <div class="top-bar">
             <div class="content-topbar flex-sb-m h-full container">
                 <div class="left-top-bar">
-                    Free shipping for standard order over $100
+                    {{ __('laravelweb.freeship') }}
                 </div>
 
                 <div class="right-top-bar flex-w h-full">
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <!-- <a href="#" class="flex-c-m trans-04 p-lr-25">
                         Help & FAQs
-                    </a>
+                    </a> -->
 
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        My Account
+                        {{ __('laravelweb.my_account') }}
                     </a>
 
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <a href="{{ route('app.setLocale', ['locale' => 'en']) }}" class="flex-c-m trans-04 p-lr-25">
                         EN
                     </a>
-
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        USD
+                    <a href="{{ route('app.setLocale', ['locale' => 'vi']) }}" class="flex-c-m trans-04 p-lr-25">
+                        VI
                     </a>
+
+                    <!-- <a href="#" class="flex-c-m trans-04 p-lr-25">
+                        USD
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -40,11 +43,11 @@
                 <div class="menu-desktop">
                     <ul class="main-menu">
                         <li class="{{ Request::is('') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.home') }}">Home</a>
+                            <a href="{{ route('frontend.home') }}">{{ __('laravelweb.home') }}</a>
                         </li>
 
                         <li class="{{ Request::is('san-pham') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.product') }}">Product</a>
+                            <a href="{{ route('frontend.product') }}">{{ __('laravelweb.product') }}</a>
                         </li>
 
                         <!-- <li class="label1" data-label1="hot">
@@ -56,12 +59,12 @@
                         </li> -->
 
                         <li class="{{ Request::is('gioi-thieu') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.about') }}">About</a>
+                            <a href="{{ route('frontend.about') }}">{{ __('laravelweb.about') }}</a>
                         </li>
 
 
                         <li class="{{ Request::is('lien-he') ? 'active-menu' : '' }}">
-                            <a href="{{ route('frontend.contact') }}">Contact</a>
+                            <a href="{{ route('frontend.contact') }}">{{ __('laravelweb.contact') }}</a>
                         </li>
                     </ul>
                 </div>
