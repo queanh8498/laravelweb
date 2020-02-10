@@ -13,7 +13,7 @@ Giới thiệu Shop Trái Cây - Ngon Ngon
 {{-- Thay thế nội dung vào Placeholder `main-content` của view `frontend.layouts.master` --}}
 @section('main-content')
 <!-- Title page -->
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('themes/cozastore/images/bg-01.jpg') }}');">
+<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('img/slider/two.jpg') }}');">
     <h2 class="ltext-105 cl0 txt-center">
         Đặt hàng hoàn tất
     </h2>
@@ -45,7 +45,7 @@ Giới thiệu Shop Trái Cây - Ngon Ngon
             <div class="col-11 col-md-5 col-lg-4 m-lr-auto">
                 <div class="how-bor1 ">
                     <div class="hov-img0">
-                        <img src="{{ asset('themes/cozastore/images/about-01.jpg') }}" alt="IMG">
+                        <img src="{{ asset('img/about/about4.jpg') }}" alt="IMG">
                     </div>
                 </div>
             </div>

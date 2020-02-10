@@ -13,7 +13,7 @@ Liên hệ Shop Trái Cây - Ngon Ngon
 {{-- Thay thế nội dung vào Placeholder `main-content` của view `frontend.layouts.master` --}}
 @section('main-content')
 <!-- Title page -->
-<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('themes/cozastore/images/bg-01.jpg') }}');">
+<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('img/slider/two.jpg') }}');">
     <h2 class="ltext-105 cl0 txt-center">
         {{ __('laravelweb.contact') }}
     </h2>
