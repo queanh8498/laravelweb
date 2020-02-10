@@ -15,7 +15,7 @@ Giới thiệu Shop Trái Cây - Ngon Ngon
 <!-- Title page -->
 <section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('{{ asset('img/slider/two.jpg') }}');">
     <h2 class="ltext-105 cl0 txt-center">
-        Đặt hàng hoàn tất
+        {{ __('laravelweb.order_finish')}}
     </h2>
 </section>
 
@@ -27,17 +27,15 @@ Giới thiệu Shop Trái Cây - Ngon Ngon
             <div class="col-md-7 col-lg-8">
                 <div class="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
                     <h3 class="mtext-111 cl2 p-b-16">
-                        Đặt hàng hoàn tất
+                        {{ __('laravelweb.order_finish')}}
                     </h3>
 
                     <p class="stext-113 cl6 p-b-26">
-                        Chúng tôi đã gởi email xác nhận đơn hàng cho Quý khách. Quý khách vui vòng kiểm tra hộp thư.
-                        Xin cám ơn Quý khách đã tin tưởng sản phẩm của chúng tôi.
+                        {{ __('laravelweb.thanks')}}
                     </p>
 
                     <p class="stext-113 cl6 p-b-26">
-                        Nếu cần hỗ trợ, vui lòng gọi đến đường dây nóng của chúng tôi để được hỗ trợ khi cần thiết:<br />
-                        TEL: 0915-659-223
+                        {{ __('laravelweb.hotro')}}
                     </p>
                 </div>
             </div>

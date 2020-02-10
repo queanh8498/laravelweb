@@ -71,6 +71,12 @@
                 'gioithieu2' => 'Until now, NGON NGON Fruit products have been purchased in the garden with confidence and absolutely no use of preserving and ripening chemicals. After that, the fruit will be washed and naturally brewed. Ensure safety and quality for customers.',
                 'gioithieu3' => 'NGON NGON Fruits takes orders for fruits and ships nationwide in Can Tho city and other provinces.',
                 'our_mission' => 'Our Mission',
+
+            //Trang order-finish
+                'order_finish' => 'Order completed',
+                'thanks' => 'We have sent an order confirmation email to you. Please check the mailbox. Thank you for trusting our products.',
+                'hotro' => 'If you need assistance, please call our hotline for assistance when needed:
+                    TEL: 0915-659-223',
         ];
 
     ?>

@@ -71,6 +71,12 @@
                 'gioithieu2' => 'Đến nay, sản phẩm trái cây NGON NGON được thu mua tận vườn tin cậy và tuyệt đối không dùng các hóa chất bảo quản, làm chín. Sau đó, trái cây sẽ được rửa sạch và ủ chín tự nhiên. bảo đảm an toàn và chất lượng cho khách hàng.',
                 'gioithieu3' => 'Trái cây NGON NGON nhận đặt hàng các loại trái cây và giao hàng toàn quốc tại thành phố Cần Thơ và các tỉnh khác.',
                 'our_mission' => 'Nhiệm vụ của chúng tôi',
+
+            //Trang order-finish
+                'order_finish' => 'Đặt hàng hoàn tất',
+                'thanks' => 'Chúng tôi đã gởi email xác nhận đơn hàng cho Quý khách. Quý khách vui vòng kiểm tra hộp thư. Xin cám ơn Quý khách đã tin tưởng sản phẩm của chúng tôi.',
+                'hotro' => 'Nếu cần hỗ trợ, vui lòng gọi đến đường dây nóng của chúng tôi để được hỗ trợ khi cần thiết:
+                TEL: 0915-659-223',
         ];
     ?>
 </body>
