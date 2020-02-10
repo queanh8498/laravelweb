@@ -28,6 +28,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
+                <th>STT</th>
                 <th>Mã</th>
                 <th>Tên</th>
                 <th>Ngày tạo mới</th>
@@ -40,8 +41,14 @@
             <!-- Sử dụng vòng lặp foreach để duyệt qua các sản phẩm 
             - Biến $danhsachsanpham là biến được truyền qua từ action `index()` trong controller SanPhamController.
             -->
+            <?php
+             $stt = 1;
+            ?>
+
             @foreach($danhsachloai as $l)
                 <tr>
+                    <td>{{ $loop->index + 1 }}</td>
+
                     <td>{{ $l->l_ma }}</td>
                     <td>{{ $l->l_ten }}</td>
                     <td>{{ $l->l_ngaytaoMoi }}</td>
@@ -72,7 +79,15 @@
                         </form>
                     </td>
                 </tr>
+                
+                <?php
+                $stt++;
+                ?>
+
             @endforeach
         </tbody>
     </table>
+
+    {{ $danhsachloai->links() }}
+
     @endsection

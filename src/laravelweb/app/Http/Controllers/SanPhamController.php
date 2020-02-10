@@ -37,10 +37,12 @@ class SanPhamController extends Controller
     public function index()
     {
          // Sử dụng Eloquent Model để truy vấn dữ liệu
-    $ds_sanpham = SanPham::all(); // SELECT * FROM sanpham
+    //$ds_sanpham = SanPham::all(); // SELECT * FROM sanpham
     // Đường dẫn đến view được quy định như sau: <FolderName>.<ViewName>
     // Mặc định đường dẫn gốc của method view() là thư mục `resources/views`
     // Hiển thị view `backend.sanpham.index`
+    $ds_sanpham = SanPham::paginate(3); // SELECT * FROM sanpham LIMIT 0,5
+
     return view('backend.sanpham.index')
         // với dữ liệu truyền từ Controller qua View, được đặt tên là `danhsachsanpham`
         ->with('danhsachsanpham', $ds_sanpham);

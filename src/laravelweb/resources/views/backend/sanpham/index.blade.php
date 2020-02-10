@@ -37,6 +37,7 @@ Danh sách sản phẩm
 <table class="table table-bordered">
     <thead>
         <tr>
+            <th>STT</th>
             <th>Mã</th>
             <th>Tên</th>
             <th>Hình ảnh</th>
@@ -48,8 +49,13 @@ Danh sách sản phẩm
         <!-- Sử dụng vòng lặp foreach để duyệt qua các sản phẩm 
         - Biến $danhsachsanpham là biến được truyền qua từ action `index()` trong controller SanPhamController.
         -->
+        <?php
+        $stt = 1;
+        ?>
         @foreach($danhsachsanpham as $sp)
             <tr>
+                <td>{{ $loop->index + 1 }}</td>
+
                 <td>{{ $sp->sp_ma }}</td>
                 <td>{{ $sp->sp_ten }}</td>
                 <td style="text-align: center;"><img src="{{ asset('storage/photos/' . $sp->sp_hinh) }}" class="img-list" style="width: 200px; height: 150px;" /></td>
@@ -92,8 +98,16 @@ Danh sách sản phẩm
                 @endif
                 </td>
             </tr>
+
+            <?php
+            $stt++;
+            ?>
+
         @endforeach
     </tbody>
 </table>
+
+{{ $danhsachsanpham->links() }}
+
 @endsection
 

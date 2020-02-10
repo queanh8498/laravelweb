@@ -18,10 +18,12 @@ class LoaiController extends Controller
     }
     public function index() {
 
-        $ds_loai = Loai::all();
-
+        //$ds_loai = Loai::all();
+        $ds_loai = Loai::paginate(3); 
+        
         return view('backend.loai.index')
         ->with('danhsachloai', $ds_loai);
+
     }
    
     public function create()

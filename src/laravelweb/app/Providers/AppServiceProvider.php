@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+        // Sử dụng giao diện Bootstrap 4 để hiển thị các LINK phân trang (pagination link)
+        Paginator::defaultView('vendor.pagination.bootstrap-4');
     }
 
     /**
