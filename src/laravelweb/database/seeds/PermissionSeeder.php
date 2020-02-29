@@ -25,6 +25,11 @@ class PermissionSeeder extends Seeder
         $permission_sp_xoa = Permission::create(['name' => 'sp_xoa']);
         $permission_sp_excel = Permission::create(['name' => 'sp_excel']);
         $permission_sp_print = Permission::create(['name' => 'sp_print']);
+
+        $permission_l_xem = Permission::create(['name' => 'l_xem']);
+        $permission_l_them = Permission::create(['name' => 'l_them']);
+        $permission_l_sua = Permission::create(['name' => 'l_sua']);
+        $permission_l_xoa = Permission::create(['name' => 'l_xoa']);
         
         $permission_kho_xem = Permission::create(['name' => 'kho_xem']);
         $permission_kho_them = Permission::create(['name' => 'kho_them']);
@@ -42,6 +47,13 @@ class PermissionSeeder extends Seeder
         $role_ketoan->givePermissionTo($permission_sp_print);
         $role_ketoan->givePermissionTo($permission_sp_excel);
         $role_ketoan->givePermissionTo($permission_sp_xem);
+
+        $role_quantri->givePermissionTo($permission_l_xem);
+        $role_quantri->givePermissionTo($permission_l_them);
+        $role_quantri->givePermissionTo($permission_l_sua);
+        $role_quantri->givePermissionTo($permission_l_xoa);
+
+        $role_ketoan->givePermissionTo($permission_l_xem);
 
         $role_thukho->givePermissionTo($permission_kho_xem);
         $role_thukho->givePermissionTo($permission_kho_them);

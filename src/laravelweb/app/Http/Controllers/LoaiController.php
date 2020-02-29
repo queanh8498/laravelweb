@@ -8,6 +8,10 @@ use App\Http\Controllers\Controller;
 use App\Loai;
 use Session;
 
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Middleware\Authenticate;
+
 class LoaiController extends Controller
 {
     //

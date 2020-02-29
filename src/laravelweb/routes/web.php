@@ -50,10 +50,16 @@ Route::get('/capquyen', function(){
     $user1->givePermissionTo('sp_print');
     $user1->givePermissionTo('sp_excel');
 
+    $user1->givePermissionTo('l_xem');
+
+
     $user2 = Nhanvien::find(2);
     $user2->givePermissionTo('sp_xem');
     $user2->givePermissionTo('sp_print');
     $user2->givePermissionTo('sp_excel');
+
+    $user2->givePermissionTo('l_xem');
+
 
     //user3 & user4 = thukho
     $user3 = Nhanvien::find(3);
@@ -76,6 +82,11 @@ Route::get('/capquyen', function(){
     $user100->givePermissionTo('sp_xoa');
     $user100->givePermissionTo('sp_excel');
     $user100->givePermissionTo('sp_print');
+
+    $user100->givePermissionTo('l_xem');
+    $user100->givePermissionTo('l_them');
+    $user100->givePermissionTo('l_sua');
+    $user100->givePermissionTo('l_xoa');
     
     return 'cap quyen okey';
 });
