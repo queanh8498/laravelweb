@@ -97,6 +97,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
 }
 
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Noticia+Text|Baloo|Cormorant");
+
 
 /*//////////////////////////////////////////////////////////////////
 [ RS PLUGIN ]*/
@@ -229,8 +231,14 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 /*---------------------------------------------*/
-.left-top-bar {
+/* .left-top-bar {
   font-family: Poppins-Regular;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #b2b2b2;
+} */
+.left-top-bar {
+  font-family: Verdana;
   font-size: 12px;
   line-height: 1.8;
   color: #b2b2b2;
@@ -239,7 +247,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*---------------------------------------------*/
 .right-top-bar a {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: Arial;
   font-size: 12px;
   line-height: 1.8;
 
@@ -367,7 +376,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .main-menu > li > a {
-  font-family: Poppins-Medium;
+  /* font-family: Poppins-Medium; */
+  font-family: Verdana;
   font-size: 14px;
   color: #333;
   padding: 5px 0px;
@@ -994,7 +1004,8 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .header-cart-item-img::after {
   content: '\e870';
-  font-family: Linearicons-Free;
+  /* font-family: Linearicons-Free; */
+  font-family: Arial;
   font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1028,25 +1039,29 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 .header-cart-item-name {
   display: block;
-  font-family: Poppins-Regular;
-  font-size: 14px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
   color: #555;
   line-height: 1.3;
 }
 
 .header-cart-item-info {
   display: block;
-  font-family: Poppins-Regular;
-  font-size: 14px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
   color: #888;
   line-height: 1.5;
 }
 
 .header-cart-total {
-  font-family: Poppins-Regular;
-  font-size: 18px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 20px;
   color: #222;
   line-height: 1.3;
+  font-weight: bold;
 }
 
 /*---------------------------------------------*/
@@ -1651,8 +1666,9 @@ button.mfp-close {
 
 .swal-button {
   background-color: #717fe0;
-  font-family: Poppins-Regular;
-  font-size: 16px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 18px;
   color: white;
   text-transform: uppercase;
   font-weight: unset;
@@ -1672,17 +1688,19 @@ button.mfp-close {
 }
 
 .swal-title {
-  font-family: Poppins-Bold;
+  /* font-family: Poppins-Bold; */
+  font-family: 'Noticia Text', serif;
   color: #333333;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 0 15px;
 }
 
 .swal-text {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
   color: #555555;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.666667;
   text-align: center;
 }
@@ -1961,19 +1979,23 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .table-shopping-cart .table_head th {
-  font-family: Poppins-Bold;
-  font-size: 13px;
+  /* font-family: Poppins-Bold; */
+  font-family: 'Noticia Text', serif;
+  font-size: 15px;
   color: #555;
   text-transform: uppercase;
   line-height: 1.6;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-weight: bold;
 }
 
 .table-shopping-cart td {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
   color: #555;
   line-height: 1.6;
+  font-size: 15px;
 }
 
 
@@ -2139,26 +2161,30 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
 .stext-101 {
-  font-family: Poppins-Medium;
-  font-size: 15px;
+  /* font-family: Poppins-Medium; */
+  font-family: 'Noticia Text', serif;
+  font-size: 18px;
   line-height: 1.466667;
   text-transform: uppercase;
 }
 
 .stext-102 {
-  font-family: Poppins-Regular;
-  font-size: 14px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
   line-height: 1.7;
 }
 
 .stext-103 {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: Arial;
   font-size: 15px;
   line-height: 1.466667;
 }
 
 .stext-104 {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: Verdana;
   font-size: 14px;
   line-height: 1.466667;
 }
@@ -2171,14 +2197,16 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-106 {
-  font-family: Poppins-Regular;
+  /* font-family: Poppins-Regular; */
+  font-family: Verdana;
   font-size: 15px;
   line-height: 1.2;
 }
 
 .stext-107 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
   line-height: 1.923;
 }
 
@@ -2201,8 +2229,9 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-111 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
   line-height: 1.6923;
 }
 
@@ -2214,20 +2243,24 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .stext-113 {
-  font-family: Poppins-Light;
-  font-size: 14px;
+  /* font-family: Poppins-Light; */
+  font-family: 'Cormorant', serif;
+  font-size: 16px;
   line-height: 1.7857;
 }
 
 .stext-114 {
-  font-family: Poppins-Italic;
+  /* font-family: Poppins-Italic; */
+  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   line-height: 1.666667;
+  font-style: Italic;
 }
 
 .stext-115 {
-  font-family: Poppins-Regular;
-  font-size: 15px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
   line-height: 1.666667;
 }
 
@@ -2256,8 +2289,9 @@ input.num-product::-webkit-inner-spin-button {
 /*//////////////////////////////////////////////////////////////////
 [ M-Text 16 - 25 ]*/
 .mtext-101 {
-  font-family: Poppins-Medium;
-  font-size: 18px;
+  /* font-family: Poppins-Medium; */
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
   line-height: 1.333333;
 }
 
@@ -2281,9 +2315,11 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .mtext-105 {
-  font-family: Poppins-Regular;
-  font-size: 24px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 .mtext-106 {
@@ -2305,22 +2341,28 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .mtext-109 {
-  font-family: Poppins-Bold;
+  font-family: 'Playfair Display', serif;
+  /* font-family: Poppins-Bold; */
   font-size: 20px;
   line-height: 1.3;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .mtext-110 {
-  font-family: Poppins-Regular;
-  font-size: 18px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
   line-height: 1.222222;
+  font-weight: bold;
 }
 
 .mtext-111 {
-  font-family: Poppins-Bold;
-  font-size: 25px;
+  /* font-family: Poppins-Bold; */
+  font-family: 'Cormorant', serif;
+  font-size: 27px;
   line-height: 1.2;
+  font-weight: bold;
 }
 
 .mtext-112 {
@@ -2336,12 +2378,21 @@ input.num-product::-webkit-inner-spin-button {
   text-transform: uppercase;
 }
 
+.mtext-114 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.333333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ L-Text >= 26 ]*/
 .ltext-101 {
-  font-family: Poppins-Regular;
-  font-size: 28px;
+  /* font-family: Poppins-Regular; */
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
   line-height: 1.2857;
 }
 
@@ -2366,9 +2417,11 @@ input.num-product::-webkit-inner-spin-button {
 }
 
 .ltext-105 {
-  font-family: Poppins-Bold;
+  /* font-family: Poppins-Bold; */
+  font-family: 'Noticia Text', serif;
   font-size: 50px;
   line-height: 1.1;
+  font-weight: bold;
 }
 
 .ltext-106 {
@@ -2398,10 +2451,12 @@ input.num-product::-webkit-inner-spin-button {
 
 /*---------------------------------------------*/
 .ltext-201 {
-  font-family: PlayfairDisplay-Bold;
+  /* font-family: PlayfairDisplay-Bold; */
+  font-family: 'Playfair Display', serif;
   font-size: 60px;
   line-height: 1.1;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .ltext-202 {

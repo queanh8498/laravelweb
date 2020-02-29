@@ -50,7 +50,7 @@
                     </div>
                 </div>
 
-               <form action="{{ route('frontend.home')}}">
+               <form action="{{ route('frontend.product')}}">
                     <div class="flex-container">
                         <input class="flex-c-m m-r-32 m-tb-5" type="text" name="search-product" placeholder="Search">
                         <input class="flex-c-m size-104 bg5 bor1 hov-btn1" type="submit" value="OK">
